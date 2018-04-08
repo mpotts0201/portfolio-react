@@ -1,33 +1,22 @@
+p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+h3{
+  font-family: 'Lato', sans-serif;
+  color: white;
 
+}
+
+h3:hover{
+  cursor: pointer;
+  color: rgb(182, 182, 182);
+}
 
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 body{
   background: url(./img/portfolio-wallpaper_1.jpg);
@@ -35,3 +24,49 @@ body{
 
 }
 
+.nameSlide {
+  animation: slide 0.75s ease-in;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.supFade {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.infoSlideEnter {
+  animation: slideRight 0.75s ease-in;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.infoHidden {
+  opacity: 0;
+}

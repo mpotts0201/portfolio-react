@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import '../App.css'
 
 const Img = styled.img`
 width:200px;
 border-radius: 50%;
-
 
 `
 
@@ -18,24 +18,30 @@ color: white;
 `
 
 
+
+
 class About extends Component {
 
-state = {
-    aboutShow: false
-}
 
 toggleAbout = () => {
-    this.setState({ aboutShow: !this.state.aboutShow })
+    const element = document.getElementById('about')
+    console.log(element)
+    element.classList.toggle('infoSlideEnter')
+    element.classList.toggle('infoHidden')
 }
 
     render() {
         return (
-            <div>
-                <H3 onClick={()=> this.toggleAbout()}>About Me</H3>
-                {this.state.aboutShow
-                ? <Img src={require("../img/headshot.jpg")} alt='A headshot of yours truly'/>
+            <div >
+                <h3 onClick={()=> this.toggleAbout()}>About Me</h3>
+                <div className='infoHidden' id='about'>
+                {/* {this.state.aboutShow
+                ? <Img id='image' src={require("../img/headshot.jpg")} alt='A headshot of yours truly'/>
 
-                :null}
+                :null} */}
+                <Img id='image' className='' src={require("../img/headshot.jpg")} alt='A headshot of yours truly'/>
+                <p>My name is Murphy and I am a creator.  Creativity and building things have always been my passions, from artwork, to cooking, to full stack web applications.  I take delight in my projects and I love the satisfaction of polishing pieces and putting them together, and learning something new along the way.  </p>
+                </div>
             </div>
         );
     }
