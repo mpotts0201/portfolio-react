@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-import '../App.css'
 
 const Img = styled.img`
 width:200px;
@@ -9,13 +8,7 @@ border-radius: 50%;
 
 `
 
-const H3 = styled.h3`
-font-family: 'Lato', sans-serif;
-color: white;
-:hover{
-    cursor: pointer;
-}
-`
+
 
 
 
@@ -23,17 +16,17 @@ color: white;
 class About extends Component {
 
 
-toggleAbout = () => {
-    const element = document.getElementById('about')
-    console.log(element)
-    element.classList.toggle('infoSlideEnter')
-    element.classList.toggle('infoHidden')
-}
+// toggleAbout = () => {
+//     const element = document.getElementById('about')
+//     console.log(element)
+//     element.classList.toggle('infoSlideEnter')
+//     element.classList.toggle('infoHidden')
+// }
 
     render() {
         return (
             <div >
-                <h3 onClick={()=> this.toggleAbout()}>About Me</h3>
+                {/* <h3 onClick={()=> this.toggleAbout()}>About Me</h3> */}
                 <div className='infoHidden' id='about'>
                 {/* {this.state.aboutShow
                 ? <Img id='image' src={require("../img/headshot.jpg")} alt='A headshot of yours truly'/>

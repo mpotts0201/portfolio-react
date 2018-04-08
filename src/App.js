@@ -16,13 +16,7 @@ import NavBar from './components/NavBar'
 
 class App extends Component {
 
-  state = {
-    formShowing: false
-  }
 
-  handleForm = (event) => {
-    this.setState({ formShowing: !this.state.formShowing })
-  }
 
 
 
@@ -31,9 +25,7 @@ class App extends Component {
       <div className="App">
         <Header/>
 
-        <NavBar handleForm={this.handleForm}
-                formShowing={this.state.formShowing}
-        />
+        <NavBar />
 
 
         
