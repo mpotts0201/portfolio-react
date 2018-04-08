@@ -37,10 +37,10 @@ class Header extends Component {
 
                 <HeaderText>
                     <div className='first-name'>
-                        <h1 id="first-name" className="nameSlide">Murphy </h1>
+                        <h1 id="first-name" className="nameSlide name">Murphy </h1>
                         <sup className="supFade">Full Stack Web Developer</sup>
                     </div>
-                    <h1 id="last-name" className="nameSlide"> Potts</h1>
+                    <h1 id="last-name" className="nameSlide name"> Potts</h1>
                 </HeaderText>
             
             </div>

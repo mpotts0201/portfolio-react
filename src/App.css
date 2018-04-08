@@ -8,6 +8,18 @@ p{
   text-decoration: none;
 
 }
+/* .name:hover{
+  animation: spread 1s ease-in;
+}
+
+@keyframes spread {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(40%);
+  }
+} */
 
 .link:hover{
   cursor: pointer;
@@ -30,14 +42,15 @@ body{
 }
 
 @keyframes slide {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-15%);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
+
 }
 
 .supFade {

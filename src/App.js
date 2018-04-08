@@ -8,13 +8,8 @@ import NavBar from './components/NavBar'
 import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
 import About from './components/About'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
-
-
-
-
-
-// var intervalID = window.setInterval(updateTransition, 7000);
 
 
 class App extends Component {
@@ -26,23 +21,22 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
+        <div className="App">
 
-        <Header/>
-        <br/>
-        <br/>
-        <br/>
-        <NavBar/>
-        <br/>
-        <br/>
-        <Switch>
-          <Route exact path='/about' component={About}/>
-          <Route exact path='/projects' component={Projects}/>
-          
-        </Switch>
+          <Header />
+          <br />
+          <br />
+          <br />
+          <NavBar />
+          <br />
+          <br />
+          <Switch>
+            <Route exact path='/about' component={About} />
+            <Route exact path='/projects' component={Projects} />
 
-        
-      </div>
+          </Switch>
+            <Footer />
+        </div>
       </Router>
     );
   }
