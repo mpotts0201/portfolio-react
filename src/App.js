@@ -29,11 +29,16 @@ class App extends Component {
       <div className="App">
 
         <Header/>
+        <br/>
+        <br/>
+        <br/>
         <NavBar/>
+        <br/>
+        <br/>
         <Switch>
           <Route exact path='/about' component={About}/>
           <Route exact path='/projects' component={Projects}/>
-
+          
         </Switch>
 
         
