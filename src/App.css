@@ -32,6 +32,9 @@ p{
 
 
 body{
+  display: flex;
+  flex: 1;
+  justify-content: center;
   background: url(./img/portfolio-wallpaper_1.jpg);
   font-family: 'Lato', sans-serif;
 
@@ -97,4 +100,15 @@ body{
     opacity: 1;
   }
 }
+
+.info{
+  display: flex;
+  justify-content: center;
+  margin: 0 300px;
+}
+
+.footer{
+  margin-top: auto;
+}
+
 

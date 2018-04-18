@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-
+import blackJack from '../img/blackjack.png'
+import daddio from '../img/daddio.png'
+import newgrinds from '../img/newgrinds.png'
 
 const ProjectList = styled.div`
 
+display: flex;
+justify-content: center;
 
 
 ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 ul>li{
-    list-style: none;
-    display:flex;
-    flex-direction: column;
+    list-style: none;    
 }
+
 ul>li>a{
     margin: 10px;
     color: white;
@@ -25,6 +28,31 @@ ul>li>a{
         color: #8497ec;    
     }
 }
+
+ul>li>a>img{
+    width: 20vw;
+    border-radius: 20px;
+}
+
+ul>li>a>p:hover, ul>li>a>img:hover{
+    cursor: pointer;
+    color: #8497ec; 
+
+}
+
+.description{
+    color: red;
+    top: 0;
+
+}
+
+ul>li>a>:hover{
+    .description{
+        color: green;    
+    }  
+}
+
+
 `
 class Projects extends Component {
 
@@ -35,23 +63,24 @@ class Projects extends Component {
 
                     <ul>
                         <li>
-                            <a href='http://wonderful-sammet-f7bff9.bitballoon.com/'>Black Jack</a>
-                            <img src='' alt='A screenshot of my Black Jack game'/>
+                            <a href='http://wonderful-sammet-f7bff9.bitballoon.com/'>
+                                <p>Black Jack</p>
+                                <img src={blackJack} alt='A screenshot of my Black Jack game' />
+                            </a>
 
                         </li>
                         <li>
-                            <a href='https://secret-crag-94679.herokuapp.com/'>Rackstar</a>
-                            <img src='' alt='A screenshot of my Fitness app'/>
+                            <a href='https://gentle-citadel-68532.herokuapp.com/'>
+                                <p>dadd.io</p>
+                                <img src={daddio} alt='A screenshot of my Dad Joke app' />
+                            </a>
 
                         </li>
                         <li>
-                            <a href='https://gentle-citadel-68532.herokuapp.com/'>dadd.io</a>
-                            <img src='' alt='A screenshot of my Dad Joke app'/>
-
-                        </li>
-                        <li>
-                            <a href=''>newgrinds</a>
-                            <img src='' alt='A screenshot of my Coffee Shop Locater app'/>
+                            <a href='https://newgrinds.herokuapp.com/'>
+                                <p>newgrinds</p>
+                                <img src={newgrinds} alt='A screenshot of my Coffee Shop Locater app' />
+                            </a>
 
                         </li>
                     </ul>

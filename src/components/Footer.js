@@ -9,6 +9,7 @@ ul{
     justify-content: center;
     align-items: flex-end;
 
+
 }
 
 ul>li{

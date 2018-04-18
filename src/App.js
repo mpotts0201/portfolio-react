@@ -35,7 +35,7 @@ class App extends Component {
             <Route exact path='/projects' component={Projects} />
 
           </Switch>
-            <Footer />
+          <Footer />
         </div>
       </Router>
     );
