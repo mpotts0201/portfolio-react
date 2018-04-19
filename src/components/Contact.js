@@ -15,7 +15,7 @@ a:hover{
     color: #8497ec;
 
 }
-h1{
+h1,h3{
 font-family: 'Lato', sans-serif;
 color: white;
 span {
@@ -44,6 +44,7 @@ class Contact extends Component {
             <Div className='infoSlideEnter info'>
 
                 <h1>Contact<span>Me</span></h1>
+                <h3>mpotts0201@gmail.com</h3>
                 <a href={resumePDF} download>Download Resume</a>
                 <br/>
                 <img src={resumePNG} alt='My Resume' />

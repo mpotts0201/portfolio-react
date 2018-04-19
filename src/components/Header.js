@@ -22,6 +22,7 @@ const HeaderText = styled.div`
     sup{
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
+        margin-left: -70px;
 
     }
 `

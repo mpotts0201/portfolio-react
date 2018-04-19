@@ -5,7 +5,7 @@ import linkedin from '../img/linkedin-icon.png'
 import github from '../img/github_icon.png'
 
 const Foot = styled.div`
-
+margin-top: 0;
 ul{
     display: flex;
     flex-direction: row;
