@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom'
 const Menu = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+
+justify-content: center space-around;
+width: 800px;
+margin-left: 62px;
+
 `
 
 
@@ -19,7 +23,7 @@ class NavBar extends Component {
             <Menu className='menuSlide'>
                 <Link className='link' to='/about'>About Me</Link>
                 <Link className='link' to='/projects'>Projects</Link>
-
+                <Link className='link' to='/resume' >Resume</Link>
             </Menu>
         );
     }
