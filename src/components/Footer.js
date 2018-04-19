@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import facebook from '../img/white-facebook-512.png'
+import linkedin from '../img/linkedin-icon.png'
+import github from '../img/github_icon.png'
 
 const Foot = styled.div`
 
@@ -25,6 +28,10 @@ ul>li>a{
     }
 }
 
+ul>li>a>img{
+    width: 30px;
+}
+
 
 `
 
@@ -34,9 +41,9 @@ class Footer extends Component {
         return (
             <Foot>
                 <ul>
-                    <li><a href='https://www.facebook.com/murphy.potts'>Facebook</a></li>
-                    <li><a href='https://www.linkedin.com/in/murphy-potts-52394314b/'>LinkedIn</a></li>
-                    <li><a href='https://github.com/mpotts0201?tab=repositories'>GitHub</a></li>
+                    <li><a href='https://www.facebook.com/murphy.potts'><img src={facebook} alt='Facebook'/></a></li>
+                    <li><a href='https://www.linkedin.com/in/murphy-potts-52394314b/'><img src={linkedin} alt='LinkedIn'/></a></li>
+                    <li><a href='https://github.com/mpotts0201?tab=repositories'><img src={github} alt='GitHub' /></a></li>
                     <li><a href=''></a></li>
                 </ul>
             </Foot>

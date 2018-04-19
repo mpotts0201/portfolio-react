@@ -23,7 +23,7 @@ class NavBar extends Component {
             <Menu className='menuSlide'>
                 <Link className='link' to='/about'>About Me</Link>
                 <Link className='link' to='/projects'>Projects</Link>
-                <Link className='link' to='/resume' >Resume</Link>
+                <Link className='link' to='/contact' >Contact Me</Link>
             </Menu>
         );
     }

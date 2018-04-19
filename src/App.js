@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Link, Route } from 'react-router-dom'
 import About from './components/About'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import Resume from './components/Resume'
+import Contact from './components/Contact'
 
 
 class App extends Component {
@@ -33,7 +33,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/about' component={About} />
             <Route exact path='/projects' component={Projects} />
-            <Route exact path='/resume' component={Resume} />
+            <Route exact path='/contact' component={Contact} />
           </Switch>
           <Footer />
         </div>
