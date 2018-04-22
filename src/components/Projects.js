@@ -19,7 +19,17 @@ ul>li{
     list-style: none;    
 }
 
-ul>li>a{
+#capstone{
+    display: flex;
+    flex-direction: column;
+}
+#otherProjects{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+ul>div>li>a, ul>li>a{
     margin: 10px;
     color: white;
     text-decoration:none;
@@ -29,9 +39,18 @@ ul>li>a{
     }
 }
 
-ul>li>a>img{
+ul>div>li>a>img{
     width: 20vw;
     border-radius: 20px;
+    margin: 15px;
+    
+}
+
+ul>li:first-child>a>img{
+    width: 40vw;
+    border-radius: 20px;
+    list-style: none;
+
 }
 
 ul>li>a>p:hover, ul>li>a>img:hover{
@@ -61,7 +80,15 @@ class Projects extends Component {
             <div>
                 <ProjectList className='infoSlideEnter' id='projects'>
 
-                    <ul>
+                    <ul id='capstone'>
+                        <li>
+                            <a href='https://newgrinds.herokuapp.com/'>
+                                <p>newgrinds</p>
+                                <img src={newgrinds} alt='A screenshot of my Coffee Shop Locater app' />
+                            </a>
+
+                        </li>
+                        <div id='otherProjects'>
                         <li>
                             <a href='http://wonderful-sammet-f7bff9.bitballoon.com/'>
                                 <p>Black Jack</p>
@@ -76,13 +103,7 @@ class Projects extends Component {
                             </a>
 
                         </li>
-                        <li>
-                            <a href='https://newgrinds.herokuapp.com/'>
-                                <p>newgrinds</p>
-                                <img src={newgrinds} alt='A screenshot of my Coffee Shop Locater app' />
-                            </a>
-
-                        </li>
+                        </div>
                     </ul>
                 </ProjectList>
             </div>
