@@ -13,7 +13,6 @@ a{
 }
 a:hover{
     color: #8497ec;
-
 }
 h1,h3{
 font-family: 'Lato', sans-serif;
@@ -38,13 +37,19 @@ font-family: 'Roboto', sans-serif;
 
 
 
+
+
 class Contact extends Component {
     render() {
         return (
             <Div className='infoSlideEnter info'>
 
                 <h1>Contact<span>Me</span></h1>
+
                 <h3>mpotts0201@gmail.com</h3>
+
+                <h3>(678) 704-6881</h3>
+                <br/>
                 <a href={resumePDF} download>Download Resume</a>
                 <br/>
                 <img src={resumePNG} alt='My Resume' />

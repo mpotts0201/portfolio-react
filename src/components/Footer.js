@@ -5,15 +5,18 @@ import linkedin from '../img/linkedin-icon.png'
 import github from '../img/github_icon.png'
 
 const Foot = styled.div`
-margin-top: 0;
-ul{
+position: fixed;
+bottom: 0;
+display: flex;
+justify-content: center;
+
+/* ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
 
 
-}
+} */
 
 ul>li{
     list-style: none;
@@ -27,9 +30,9 @@ ul>li>a{
         color: #8497ec;    
     }
 }
-
 ul>li>a>img{
-    width: 30px;
+    width: 50px;
+    margin: 20px;
 }
 
 
@@ -39,11 +42,11 @@ ul>li>a>img{
 class Footer extends Component {
     render() {
         return (
-            <Foot>
+            <Foot className='menuSlide'>
                 <ul>
-                    <li><a href='https://www.facebook.com/murphy.potts'><img src={facebook} alt='Facebook'/></a></li>
-                    <li><a href='https://www.linkedin.com/in/murphy-potts-52394314b/'><img src={linkedin} alt='LinkedIn'/></a></li>
-                    <li><a href='https://github.com/mpotts0201?tab=repositories'><img src={github} alt='GitHub' /></a></li>
+                    <li><a href='https://www.facebook.com/murphy.potts' title='Facebook'><img src={facebook} alt='Facebook'/></a></li>
+                    <li><a href='https://www.linkedin.com/in/murphy-potts-52394314b/' title='LinkedIn'><img src={linkedin} alt='LinkedIn'/></a></li>
+                    <li><a href='https://github.com/mpotts0201?tab=repositories' title='GitHub'><img src={github} alt='GitHub' /></a></li>
                     <li><a href=''></a></li>
                 </ul>
             </Foot>

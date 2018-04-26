@@ -10,7 +10,9 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
-
+import Home from './components/Home'
+import video from './videos/portfolio.mp4'
+import View from './components/View'
 
 class App extends Component {
 
@@ -21,21 +23,30 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div>
+          <video autoPlay muted loop id="myVideo">
+            <source src={video} type="video/mp4" />
+          </video>
+          <div className='dashboard'>
+            <div className='sidebar'>
+              <Header />
+              <NavBar />
+              <Footer />
+            </div>
 
-          <Header />
-          <br />
-          <br />
-          <br />
-          <NavBar />
-          <br />
-          <br />
-          <Switch>
-            <Route exact path='/about' component={About} />
-            <Route exact path='/projects' component={Projects} />
-            <Route exact path='/contact' component={Contact} />
-          </Switch>
-          <Footer />
+          </div>
+
+          <div className="App">
+
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/view' component={View} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/contact' component={Contact} />
+            </Switch>
+          </div>
+
         </div>
       </Router>
     );

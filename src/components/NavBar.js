@@ -5,13 +5,19 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const Menu = styled.div`
+
 display: flex;
-flex-direction: row;
+flex-direction: column;
+justify-content: flex-start;
+position: fixed;
+top: 0;
+margin-top: 40px;
+margin-left: 50px;
 
-justify-content: center space-around;
-width: 800px;
-margin-left: 62px;
-
+.link{
+    margin: 20px;
+}
+font-size: 25px;
 `
 
 
