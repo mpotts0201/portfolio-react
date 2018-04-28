@@ -44,9 +44,9 @@ class About extends Component {
                         <br/>
                         <br/>
                         Thank you for visiting my page!  I genuinely hope you enjoy the things I have built here.  
+                        {/* <br/>
                         <br/>
-                        <br/>
-                        <Link className='view' to='/view'>Or... just enjoy the view.</Link>
+                        <Link className='view' to='/view'>Or... just enjoy the view.</Link> */}
                         <br/>
                         <br/>
                         Feel free to reach out to me and get to know me!  I am looking to join creative teams that love to create as much as I do. 
