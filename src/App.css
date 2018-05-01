@@ -34,12 +34,21 @@ p{
   }
 } */
 
-/* .dashboard{
+
+@media(max-width: 650px){
+.menuSlide{
   display: flex;
-  width: 70vw;
-  flex-direction:row-reverse;
-  margin: 50px;
-} */
+  flex-direction: row;
+  margin: 0;
+}
+
+}
+
+@media(max-width: 1100px){
+  .info{
+    margin-top: 0;
+  }
+}
 
 .link:hover{
   cursor: pointer;
@@ -140,6 +149,7 @@ body{
   display: flex;
   justify-content: center;
   margin: 50px;
+
 
 }
 

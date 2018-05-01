@@ -34,7 +34,19 @@ ul>li>a>img{
     width: 50px;
     margin: 20px;
 }
+@media(max-width: 1100px){
+    position: static;
 
+    ul {
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    /* top: 0;
+    right: 0; */
+}
 
 `
 

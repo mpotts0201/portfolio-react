@@ -23,6 +23,7 @@ const HeaderText = styled.div`
 
     #first-name{
         font-weight: 700;
+        
 
     }
 
@@ -34,6 +35,20 @@ const HeaderText = styled.div`
     sup{
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
+    }
+    @media(max-width: 500px){
+        
+        div>h1{
+            font-size: 3.5rem;
+            
+        }
+        .first-name{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;             
+        }
     }
 `
 

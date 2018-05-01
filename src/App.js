@@ -28,8 +28,9 @@ class App extends Component {
             <source src={video} type="video/mp4" />
           </video>
           <div className='dashboard'>
+            <Header />
             <div className='sidebar'>
-              <Header />
+
               <NavBar />
               <Footer />
             </div>
